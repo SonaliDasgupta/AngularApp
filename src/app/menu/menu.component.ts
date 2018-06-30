@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Dish } from '../shared/dish';
 
 
-const DISHES: dish[] = [
+const DISHES: Dish[] = [
     {
       name: 'Uthappizza',
       image: '/assets/images/uthappizza.png',
@@ -52,7 +52,7 @@ export class MenuComponent implements OnInit {
 
  selectedDish: Dish = this.dishes[0];
 
- 
+
   constructor() { }
 
   ngOnInit() {
