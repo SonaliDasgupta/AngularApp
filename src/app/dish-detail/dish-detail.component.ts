@@ -12,10 +12,10 @@ export class DishDetailComponent implements OnInit{
 
  	@Input() dish : Dish;
 
-	//comments : Comment[] 
+	
 
 	constructor() {
-	//	comments= this.dish.comments;
+	
 	 }
 
 	ngOnInit() { }
