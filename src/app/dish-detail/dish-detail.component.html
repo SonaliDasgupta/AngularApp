@@ -31,9 +31,9 @@
   		<h1>Comments on {{dish.name | uppercase}}</h1>
   	</mat-card-title>
   	</mat-card-header>
-  	<br>
+  	
   	<mat-card-content>
-  		<mat-list *ngFor="let comment of comments">
+  		<mat-list *ngFor="let comment of dish.comments">
   			<mat-list-item>
   				<p matLine>{{comment.comment}}</p>
   				
