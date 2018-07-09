@@ -20,6 +20,9 @@ import { PromotionService } from './services/promotion.service';
 import { LeaderService } from './services/leader.service';
 
 import { AppRoutingModule } from './app-routing/app-routing.module';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle'
+
+
 import { LeaderDetailComponent } from './leader-detail/leader-detail.component';
 import { LoginComponentComponent } from './login-component/login-component.component';
 
@@ -45,7 +48,9 @@ import { LoginComponentComponent } from './login-component/login-component.compo
     MaterialModule,
     FlexLayoutModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    MatSlideToggleModule
   ],
   providers: [ DishService, PromotionService, LeaderService ],
   entryComponents: [LoginComponentComponent],
