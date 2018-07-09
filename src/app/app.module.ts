@@ -21,6 +21,8 @@ import { LeaderService } from './services/leader.service';
 
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { LeaderDetailComponent } from './leader-detail/leader-detail.component';
+import { LoginComponentComponent } from './login-component/login-component.component';
+
 
 @NgModule({
   declarations: [
@@ -32,7 +34,8 @@ import { LeaderDetailComponent } from './leader-detail/leader-detail.component';
     HomeComponent,
     AboutComponent,
     ContactComponent,
-    LeaderDetailComponent
+    LeaderDetailComponent,
+    LoginComponentComponent
   ],
   imports: [
     BrowserModule,
@@ -45,6 +48,7 @@ import { LeaderDetailComponent } from './leader-detail/leader-detail.component';
     AppRoutingModule
   ],
   providers: [ DishService, PromotionService, LeaderService ],
+  entryComponents: [LoginComponentComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
