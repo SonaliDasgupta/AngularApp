@@ -7,6 +7,7 @@ import 'rxjs/add/operator/delay';
 
 import { Dish } from '../shared/dish';
 import { DISHES } from '../shared/dishes';
+import { Comment } from '../shared/comment';
 
 @Injectable({
   providedIn: 'root'
@@ -22,6 +23,10 @@ export class DishService {
   getDish(id: number): Observable<Dish>{
   	return of(DISHES.filter(dish => dish.id == id)[0]).delay(2000);
   
+  }
+
+  getComments(id: number): Observable<Comment[]>{
+  return of((DISHES.filter(dish=> dish.id==id)[0]).comments);
   }
 
   getFeaturedDish(): Observable<Dish>{

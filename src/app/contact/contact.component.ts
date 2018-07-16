@@ -63,7 +63,7 @@ export class ContactComponent implements OnInit {
   }
 
   onValueChanged(data?: any){
-  	if(this.feedbackForm){
+  	if(!this.feedbackForm){
   	return;
   	}
   	const form= this.feedbackForm;
