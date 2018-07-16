@@ -44,27 +44,28 @@
     <p>
       <mat-form-field class="half-width" class="[negative: formErrors.firstname, positive: !(formErrors.firstname)]">
         <input matInput formControlName="firstname" placeholder="First Name" type="text" required>
-        <mat-hint>
-          <span [hidden]="!(formErrors.firstname)">{{formErrors.firstname}}}</span>
-        </mat-hint>
+        
+          <mat-error *ngIf="formErrors.firstname">{{formErrors.firstname}}}</mat-error>
+        
       </mat-form-field>
       <mat-form-field class="half-width" class="[negative: formErrors.lastname, positive: !(formErrors.lastname)]">
         <input matInput formControlName="lastname" placeholder="Last Name" type="text" required>
-        <mat-hint>
-          <span [hidden]="!(formErrors.lastname)">{{formErrors.lastname}}</span>
-        </mat-hint>
+        
+          <mat-error *ngIf="formErrors.lastname">{{formErrors.lastname}}</mat-error>
+          
+        
       </mat-form-field>
       <mat-form-field class="half-width" class="[negative: formErrors.telnum, positive: !(formErrors.telnum)]">
         <input matInput formControlName="telnum" placeholder="Telephone" type="Tel" pattern="[0-9]*" required>
-        <mat-hint>
-          <span [hidden]="!(formErrors.telnum)">{{formErrors.telnum}}</span>
-        </mat-hint>
+       
+          <mat-error *ngIf="formErrors.telnum">{{formErrors.telnum}}</mat-error>
+        
       </mat-form-field>
       <mat-form-field class="half-width" class="[negative: formErrors.email, positive: !(formErrors.email))]">
         <input matInput formControl="email" placeholder="Email" type="email" email required>
-        <mat-hint>
-          <span [hidden]="!(formErrors.email)">{{formErrors.email}}</span>
-        </mat-hint>
+        
+          <mat-error *ngIf="formErrors.email">{{formErrors.email}}</mat-error>
+        
       </mat-form-field>
     </p>
     <table class="form-size">
