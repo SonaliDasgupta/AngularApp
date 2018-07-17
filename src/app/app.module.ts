@@ -5,6 +5,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from './material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 import 'hammerjs';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
@@ -18,6 +19,7 @@ import { ContactComponent } from './contact/contact.component';
 import { DishService } from './services/dish.service';
 import { PromotionService } from './services/promotion.service';
 import { LeaderService } from './services/leader.service';
+import { ProcessHttpmessageService } from './services/process-httpmessage.service';
 
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle'
@@ -25,6 +27,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle'
 
 import { LeaderDetailComponent } from './leader-detail/leader-detail.component';
 import { LoginComponentComponent } from './login-component/login-component.component';
+import { baseURL } from './shared/baseurl';
 
 
 @NgModule({
@@ -50,9 +53,11 @@ import { LoginComponentComponent } from './login-component/login-component.compo
     HttpModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    HttpClientModule
   ],
-  providers: [ DishService, PromotionService, LeaderService ],
+  providers: [ DishService, PromotionService, LeaderService , ProcessHttpmessageService,
+  {provide: 'BaseURL', useValue: baseURL}],
   entryComponents: [LoginComponentComponent],
   bootstrap: [AppComponent]
 })

@@ -1,13 +1,14 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Dish } from '../shared/dish';
-import { DISHES } from '../shared/dishes';
+
 import { MenuComponent } from '../menu/menu.component';
 import { Params , ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { DishService } from '../services/dish.service';
 import 'rxjs/add/operator/switchMap';
 import { FormBuilder, FormGroup, Validators} from '@angular/forms';
-import { Comment } from '../shared/comment'
+import { Comment } from '../shared/comment';
+import { Inject } from '@angular/core';
 @Component({
   selector: 'app-dish-detail',
   templateUrl: './dish-detail.component.html',
@@ -52,7 +53,7 @@ export class DishDetailComponent implements OnInit{
 
 	
 
-	constructor(private dishService : DishService, private route: ActivatedRoute, private location: Location, private fb: FormBuilder) {
+	constructor(private dishService : DishService, private route: ActivatedRoute, private location: Location, private fb: FormBuilder, @Inject('BaseURL') private BaseURL ) {
 		this.createForm();
 
 	
