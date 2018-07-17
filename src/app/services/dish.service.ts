@@ -25,11 +25,11 @@ export class DishService {
   constructor(private http: HttpClient, private processHttpMessageService : ProcessHttpmessageService) { }
 
   getDishes(): Observable<Dish[]> {
-  return this.http.get<Dish[]>(baseURL+ 'dishes');
+  return this.http.get<Dish[]>(baseURL+ 'dishes').catch(error => { return this.processHttpMessageService.handleError(error);});
   }
 
   getDish(id: number): Observable<Dish>{
-  	return this.http.get<Dish>(baseURL+'dishes/'+id);
+  	return this.http.get<Dish>(baseURL+'dishes/'+id).catch(error => { return this.processHttpMessageService.handleError(error);});
   
   }
 
@@ -38,10 +38,10 @@ export class DishService {
   }*/
 
   getFeaturedDish(): Observable<Dish>{
-  	return this.http.get<Dish>(baseURL+'dishes?featured=true').pipe(map(dish => dish[0]));
+  	return this.http.get<Dish>(baseURL+'dishes?featured=true').pipe(map(dish => dish[0])).catch(error => { return this.processHttpMessageService.handleError(error);});
   }
 
   getDishIds(): Observable<number[] | any>{
-    return this.getDishes().pipe(map(dishes => dishes.map(dish => dish.id)));
+    return this.getDishes().pipe(map(dishes => dishes.map(dish => dish.id))).catch(error => { return error;});
   }
 }

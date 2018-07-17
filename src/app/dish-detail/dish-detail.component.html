@@ -56,10 +56,16 @@
   </mat-card>
 </div>
 
-<div [hidden]="dish">
+<div [hidden]="dish || errMsg">
   <mat-spinner></mat-spinner>
   <h4>Loading, please wait..</h4>
 </div>
+
+<div *ngIf="errMsg">
+  <h2>Error</h2>
+  <h4>{{errMsg}}</h4>
+</div>
+
 
 <div fxFlex>
 <form novalidation [formGroup]="commentsForm" (ngSubmit)="onSubmit()">

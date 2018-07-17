@@ -25,6 +25,8 @@ export class DishDetailComponent implements OnInit{
  	
  	formVal: Comment;
 
+ 	errMsg: string;
+
  	
  	
  	
@@ -65,7 +67,7 @@ export class DishDetailComponent implements OnInit{
 		 .subscribe(dish => { this.dish = dish; 
 			
 		 this.setPrevNext(dish.id);
-		 });
+		 }, errmess=> this.errMsg=errmess);
 
          
 
