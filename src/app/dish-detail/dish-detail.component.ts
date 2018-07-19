@@ -18,6 +18,7 @@ import { Inject } from '@angular/core';
 export class DishDetailComponent implements OnInit{
 
  	dish : Dish;
+ 	dishcopy = null;
  	dishIds: number[];
  	prev: number;
  	next: number;
@@ -65,7 +66,7 @@ export class DishDetailComponent implements OnInit{
 		this.dishService.getDishIds().subscribe((dishIds: number[])=> this.dishIds=dishIds);
 		this.route.params.switchMap((params: Params)=> this.dishService.getDish(+params['id']))
 		 .subscribe(dish => { this.dish = dish; 
-			
+			this.dishcopy=dish;
 		 this.setPrevNext(dish.id);
 		 }, errmess=> this.errMsg=errmess);
 
@@ -110,6 +111,7 @@ export class DishDetailComponent implements OnInit{
   	this.formVal=this.commentsForm.value;
   	this.formVal.date=(new Date()).toISOString();
   	this.dish.comments.push(this.formVal);
+
   	
 
   	
@@ -146,6 +148,8 @@ export class DishDetailComponent implements OnInit{
 		
 			
 		this.formVal=null;
+		this.dishcopy.comments.push(this.comment);
+		this.dishcopy.save().subscribe(dish => this.dish=dish);
 		
 		console.log(this.dish.comments);
   		this.commentsForm.reset({
