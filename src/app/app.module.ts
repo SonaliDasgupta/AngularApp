@@ -28,6 +28,8 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle'
 import { LeaderDetailComponent } from './leader-detail/leader-detail.component';
 import { LoginComponentComponent } from './login-component/login-component.component';
 import { baseURL } from './shared/baseurl';
+import { RestangularModule, Restangular } from 'ngx-restangular';
+import { RestangularConfigFactory } from './shared/restconfig';
 
 
 @NgModule({
@@ -54,7 +56,8 @@ import { baseURL } from './shared/baseurl';
     AppRoutingModule,
     ReactiveFormsModule,
     MatSlideToggleModule,
-    HttpClientModule
+    HttpClientModule,
+    RestangularModule.forRoot(RestangularConfigFactory)
   ],
   providers: [ DishService, PromotionService, LeaderService , ProcessHttpmessageService,
   {provide: 'BaseURL', useValue: baseURL}],

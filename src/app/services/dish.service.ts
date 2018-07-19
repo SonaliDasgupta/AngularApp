@@ -14,6 +14,7 @@ import { HttpClient } from '@angular/common/http';
 import { baseURL } from '../shared/baseurl';
 import { ProcessHttpmessageService } from './process-httpmessage.service';
 import { Comment } from '../shared/comment';
+import { Restangular, RestangularModule } from 'ngx-restangular';
 
 @Injectable({
   providedIn: 'root'
@@ -22,14 +23,14 @@ export class DishService {
 
   dishes: Dish[];
 
-  constructor(private http: HttpClient, private processHttpMessageService : ProcessHttpmessageService) { }
+  constructor(private restangular: Restangular , private processHttpMessageService : ProcessHttpmessageService) { }
 
   getDishes(): Observable<Dish[]> {
-  return this.http.get<Dish[]>(baseURL+ 'dishes').catch(error => { return this.processHttpMessageService.handleError(error);});
+  return this.restangular.all('dishes').getList();
   }
 
   getDish(id: number): Observable<Dish>{
-  	return this.http.get<Dish>(baseURL+'dishes/'+id).catch(error => { return this.processHttpMessageService.handleError(error);});
+  	return this.restangular.one('dishes',id).get();
   
   }
 
@@ -38,7 +39,7 @@ export class DishService {
   }*/
 
   getFeaturedDish(): Observable<Dish>{
-  	return this.http.get<Dish>(baseURL+'dishes?featured=true').pipe(map(dish => dish[0])).catch(error => { return this.processHttpMessageService.handleError(error);});
+  	return this.restangular.all('dishes').getList({featured: true}).pipe(map(dishes=> dishes[0]));
   }
 
   getDishIds(): Observable<number[] | any>{
