@@ -23,6 +23,7 @@ export class DishDetailComponent implements OnInit{
  	prev: number;
  	next: number;
  	commentsForm : FormGroup;
+
  	
  	formVal: Comment;
 
@@ -148,7 +149,7 @@ export class DishDetailComponent implements OnInit{
 		
 			
 		this.formVal=null;
-		this.dishcopy.comments.push(this.comment);
+		this.dishcopy.comments.push(this.formVal);
 		this.dishcopy.save().subscribe(dish => this.dish=dish);
 		
 		console.log(this.dish.comments);
