@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Note : A Server supporting REST APIs with a Database has to be up and running, at base URL http://localhost:3000/ on your machine.
 
-The corresponding data about the dishes, comments, leaders, etc. is obtained from the database. Please refer to the file 'db.json'.
+The corresponding data about the dishes, comments, leaders, etc. is obtained from the database. Please refer to the file 'db.json'. Download this file on your machine , and start a server which fetches data from this database, to be rendered to this client-side application.
 
 ## Development server
 
