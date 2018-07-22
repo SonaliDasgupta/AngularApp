@@ -40,6 +40,7 @@ export class DishDetailComponent implements OnInit{
 
  	
  	formVal: Comment;
+ 	lastComment: Comment = null;
 
  	errMsg: string;
  	visibility= 'shown';
@@ -127,10 +128,13 @@ export class DishDetailComponent implements OnInit{
 
 
   	if(this.commentsForm.valid){
-  	
+  	if(this.lastComment){
+  	this.dish.comments= this.dish.comments.filter(value => value!=this.lastComment);
+  	}
   	this.formVal=this.commentsForm.value;
   	this.formVal.date=(new Date()).toISOString();
   	this.dish.comments.push(this.formVal);
+  	this.lastComment=this.formVal;
 
   	
 
