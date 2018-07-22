@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8. The Restaurant Website created while learning Angular App development can be viewed at https://sonalidasgupta.github.io/AngularApp .
 
+Note : A Server supporting REST APIs with a Database has to be up and running, at base URL http://localhost:3000/ on your machine.
+
+The corresponding data about the dishes, comments, leaders, etc. is obtained from the database.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
