@@ -7,6 +7,8 @@ import 'rxjs/observable/of';
 import { of } from 'rxjs';
 
 import 'rxjs/add/operator/delay';
+import { Restangular, RestangularModule } from 'ngx-restangular';
+import { map } from 'rxjs/operators';
 
 
 @Injectable({
@@ -14,22 +16,22 @@ import 'rxjs/add/operator/delay';
 })
 export class PromotionService {
 
-  constructor() { }
+  constructor(private restangular: Restangular) { }
 
   getPromotions(): Observable<Promotion[]> {
-  return of(PROMOTIONS).delay(2000);
+  return this.restangular.all('promotions').getList();
   
   
   }
 
   getPromotion(id: number): Observable<Promotion>{
-  	return of(PROMOTIONS.filter((promo) => (promo.id===id))[0]).delay(2000);
+  	return this.restangular.one('promotions',id).get();
     
     
   }
 
   getFeaturedPromotion(): Observable<Promotion>{
-  	return of(PROMOTIONS.filter((promo) => promo.featured)[0]).delay(2000);
+  	return this.restangular.all('promotions').getList({'featured':'true'}).pipe(map(promotion => promotion[0]));
     
   }
 }

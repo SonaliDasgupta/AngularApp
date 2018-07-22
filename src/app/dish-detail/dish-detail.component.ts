@@ -84,6 +84,7 @@ export class DishDetailComponent implements OnInit{
 		this.visibility='hidden';
 		return this.dishService.getDish(+params['id'])})
 		 .subscribe(dish => { this.dish = dish; 
+		 	console.log(dish);
 			this.dishcopy=dish;
 		 this.setPrevNext(dish.id);
 		 this.visibility='shown';

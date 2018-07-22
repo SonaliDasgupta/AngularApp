@@ -41,8 +41,8 @@
   	</mat-card-title>
   	</mat-card-header>
   	
-  	<mat-card-content>
-  		<mat-list *ngFor="let comment of this.dish.comments" [@visibility]="visibility" [@expand]>
+  	<mat-card-content *ngIf="dish">
+  		<mat-list *ngFor="let comment of dish.comments" [@visibility]="visibility" [@expand]>
   			<mat-list-item>
   				<p matLine>{{comment.comment}}</p>
   				

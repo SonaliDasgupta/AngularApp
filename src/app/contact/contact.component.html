@@ -39,8 +39,8 @@
 
 <div fxFlex fxFlexOffset="20px" class="form-size">
   <h3>Send us your Feedback</h3>
-  <p>{{feedbackForm.value | json }} {{feedbackForm.status | json}}</p>
-  <form novalidation [formGroup]="feedbackForm" (ngSubmit)="onSubmit()">
+  
+  <form novalidation [formGroup]="feedbackForm" (ngSubmit)="onSubmit()" [@visibility]="visibility">
     <p>
       <mat-form-field class="half-width" class="[negative: formErrors.firstname, positive: !(formErrors.firstname)]">
         <input matInput formControlName="firstname" placeholder="First Name" type="text" required>
@@ -62,7 +62,7 @@
         
       </mat-form-field>
       <mat-form-field class="half-width" class="[negative: formErrors.email, positive: !(formErrors.email))]">
-        <input matInput formControl="email" placeholder="Email" type="email" email required>
+        <input matInput formControlName="email" placeholder="Email" type='email' email required>
         
           <mat-error *ngIf="formErrors.email">{{formErrors.email}}</mat-error>
         
@@ -88,4 +88,21 @@
     <button type="submit" mat-button class="background-primary text-floral-white" [disabled]="feedbackForm.invalid">Submit</button>
 
   </form>
+
+
+  <div [hidden]="!submitted || feedback">
+  <mat-spinner></mat-spinner>
+  <h4>Submitting feedback form, please wait..</h4>
+</div>
+
+<div fxFlex class="flex-spacer" [@visibility]="visibility_data">
+<mat-list *ngIf="feedback">
+  <mat-list-item>"FirstName: " {{feedback.firstname}}</mat-list-item>
+  <mat-list-item>"Last Name:" {{feedback.lastname}}</mat-list-item>
+  <mat-list-item>"Email:" {{feedback.email}}</mat-list-item>
+  <mat-list-item>"Tel. No. :" {{feedback.telnum}}</mat-list-item>
+  <mat-list-item *ngIf="feedback.message">"Feedback: " {{feedback.message}}</mat-list-item>
+</mat-list>
+</div>
+
 </div>

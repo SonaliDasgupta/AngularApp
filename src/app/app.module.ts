@@ -31,6 +31,7 @@ import { baseURL } from './shared/baseurl';
 import { RestangularModule, Restangular } from 'ngx-restangular';
 import { RestangularConfigFactory } from './shared/restconfig';
 import { HighlightDirective } from './directives/highlight.directive';
+import { WindowRefService } from './services/windowref.service';
 
 
 @NgModule({
@@ -61,7 +62,7 @@ import { HighlightDirective } from './directives/highlight.directive';
     HttpClientModule,
     RestangularModule.forRoot(RestangularConfigFactory)
   ],
-  providers: [ DishService, PromotionService, LeaderService , ProcessHttpmessageService,
+  providers: [ DishService, PromotionService, LeaderService , ProcessHttpmessageService, WindowRefService,
   {provide: 'BaseURL', useValue: baseURL}],
   entryComponents: [LoginComponentComponent],
   bootstrap: [AppComponent]
