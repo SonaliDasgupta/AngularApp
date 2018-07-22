@@ -1,0 +1,733 @@
+{
+  "dishes": [
+    {
+      "id": 0,
+      "name": "Uthappizza",
+      "image": "images/uthappizza.png",
+      "category": "mains",
+      "label": "Hot",
+      "price": "4.99",
+      "featured": "true",
+      "description": "A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.",
+      "comments": [
+        {
+          "rating": 5,
+          "comment": "Imagine all the eatables, living in conFusion!",
+          "author": "John Lemon",
+          "date": "2012-10-16T17:57:28.556094Z"
+        },
+        {
+          "rating": 4,
+          "comment": "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
+          "author": "Paul McVites",
+          "date": "2014-09-05T17:57:28.556094Z"
+        },
+        {
+          "rating": 3,
+          "comment": "Eat it, just eat it!",
+          "author": "Michael Jaikishan",
+          "date": "2015-02-13T17:57:28.556094Z"
+        },
+        {
+          "rating": 4,
+          "comment": "Ultimate, Reaching for the stars!",
+          "author": "Ringo Starry",
+          "date": "2013-12-02T17:57:28.556094Z"
+        },
+        {
+          "rating": 2,
+          "comment": "It's your birthday, we're gonna party!",
+          "author": "25 Cent",
+          "date": "2011-12-02T17:57:28.556094Z"
+        },
+        {
+          "author": "ss",
+          "comment": "ss",
+          "rating": 1,
+          "date": "2018-07-19T16:31:24.835Z"
+        },
+        {
+          "author": "dd",
+          "comment": "dd",
+          "rating": 1,
+          "date": "2018-07-19T16:36:31.653Z"
+        },
+        null
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Zucchipakoda",
+      "image": "images/zucchipakoda.png",
+      "category": "appetizer",
+      "label": "",
+      "price": "1.99",
+      "featured": "false",
+      "description": "Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied with a sweet-tangy tamarind sauce",
+      "comments": [
+        {
+          "rating": 5,
+          "comment": "Imagine all the eatables, living in conFusion!",
+          "author": "John Lemon",
+          "date": "2012-10-16T17:57:28.556094Z"
+        },
+        {
+          "rating": 4,
+          "comment": "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
+          "author": "Paul McVites",
+          "date": "2014-09-05T17:57:28.556094Z"
+        },
+        {
+          "rating": 3,
+          "comment": "Eat it, just eat it!",
+          "author": "Michael Jaikishan",
+          "date": "2015-02-13T17:57:28.556094Z"
+        },
+        {
+          "rating": 4,
+          "comment": "Ultimate, Reaching for the stars!",
+          "author": "Ringo Starry",
+          "date": "2013-12-02T17:57:28.556094Z"
+        },
+        {
+          "rating": 2,
+          "comment": "It's your birthday, we're gonna party!",
+          "author": "25 Cent",
+          "date": "2011-12-02T17:57:28.556094Z"
+        },
+        {
+          "author": "Sonali",
+          "comment": "Wow this is good!!",
+          "rating": 5,
+          "date": "2018-07-22T09:34:51.355Z"
+        },
+        null
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Vadonut",
+      "image": "images/vadonut.png",
+      "category": "appetizer",
+      "label": "New",
+      "price": "1.99",
+      "featured": "false",
+      "description": "A quintessential ConFusion experience, is it a vada or is it a donut?",
+      "comments": [
+        {
+          "rating": 5,
+          "comment": "Imagine all the eatables, living in conFusion!",
+          "author": "John Lemon",
+          "date": "2012-10-16T17:57:28.556094Z"
+        },
+        {
+          "rating": 4,
+          "comment": "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
+          "author": "Paul McVites",
+          "date": "2014-09-05T17:57:28.556094Z"
+        },
+        {
+          "rating": 3,
+          "comment": "Eat it, just eat it!",
+          "author": "Michael Jaikishan",
+          "date": "2015-02-13T17:57:28.556094Z"
+        },
+        {
+          "rating": 4,
+          "comment": "Ultimate, Reaching for the stars!",
+          "author": "Ringo Starry",
+          "date": "2013-12-02T17:57:28.556094Z"
+        },
+        {
+          "rating": 2,
+          "comment": "It's your birthday, we're gonna party!",
+          "author": "25 Cent",
+          "date": "2011-12-02T17:57:28.556094Z"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "ElaiCheese Cake",
+      "image": "images/elaicheesecake.png",
+      "category": "dessert",
+      "label": "",
+      "price": "2.99",
+      "featured": "false",
+      "description": "A delectable, semi-sweet New York Style Cheese Cake, with Graham cracker crust and spiced with Indian cardamoms",
+      "comments": [
+        {
+          "rating": 5,
+          "comment": "Imagine all the eatables, living in conFusion!",
+          "author": "John Lemon",
+          "date": "2012-10-16T17:57:28.556094Z"
+        },
+        {
+          "rating": 4,
+          "comment": "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
+          "author": "Paul McVites",
+          "date": "2014-09-05T17:57:28.556094Z"
+        },
+        {
+          "rating": 3,
+          "comment": "Eat it, just eat it!",
+          "author": "Michael Jaikishan",
+          "date": "2015-02-13T17:57:28.556094Z"
+        },
+        {
+          "rating": 4,
+          "comment": "Ultimate, Reaching for the stars!",
+          "author": "Ringo Starry",
+          "date": "2013-12-02T17:57:28.556094Z"
+        },
+        {
+          "rating": 2,
+          "comment": "It's your birthday, we're gonna party!",
+          "author": "25 Cent",
+          "date": "2011-12-02T17:57:28.556094Z"
+        }
+      ]
+    }
+  ],
+  "promotions": [
+    {
+      "id": 0,
+      "name": "Weekend Grand Buffet",
+      "image": "images/buffet.png",
+      "label": "New",
+      "price": "19.99",
+      "featured": "true",
+      "description": "Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person "
+    }
+  ],
+  "leaders": [
+    {
+      "id": 0,
+      "name": "Peter Pan",
+      "image": "images/alberto.png",
+      "designation": "Chief Epicurious Officer",
+      "abbr": "CEO",
+      "featured": "false",
+      "description": "Our CEO, Peter, credits his hardworking East Asian immigrant parents who undertook the arduous journey to the shores of America with the intention of giving their children the best future. His mother's wizardy in the kitchen whipping up the tastiest dishes with whatever is available inexpensively at the supermarket, was his first inspiration to create the fusion cuisines for which The Frying Pan became well known. He brings his zeal for fusion cuisines to this restaurant, pioneering cross-cultural culinary connections."
+    },
+    {
+      "id": 1,
+      "name": "Dhanasekaran Witherspoon",
+      "image": "images/alberto.png",
+      "designation": "Chief Food Officer",
+      "abbr": "CFO",
+      "featured": "false",
+      "description": "Our CFO, Danny, as he is affectionately referred to by his colleagues, comes from a long established family tradition in farming and produce. His experiences growing up on a farm in the Australian outback gave him great appreciation for varieties of food sources. As he puts it in his own words, Everything that runs, wins, and everything that stays, pays!"
+    },
+    {
+      "id": 2,
+      "name": "Agumbe Tang",
+      "image": "images/alberto.png",
+      "designation": "Chief Taste Officer",
+      "abbr": "CTO",
+      "featured": "false",
+      "description": "Blessed with the most discerning gustatory sense, Agumbe, our CFO, personally ensures that every dish that we serve meets his exacting tastes. Our chefs dread the tongue lashing that ensues if their dish does not meet his exacting standards. He lives by his motto, You click only if you survive my lick."
+    },
+    {
+      "id": 3,
+      "name": "Alberto Somayya",
+      "image": "images/alberto.png",
+      "designation": "Executive Chef",
+      "abbr": "EC",
+      "featured": "true",
+      "description": "Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. He says, Put together the cuisines from the two craziest cultures, and you get a winning hit! Amma Mia!"
+    }
+  ],
+  "feedback": [
+    {
+      "firstname": "ss",
+      "lastname": "ss",
+      "telnum": 0,
+      "email": "s@a.com",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 1
+    },
+    {
+      "firstname": "aa",
+      "lastname": "aa",
+      "telnum": 0,
+      "email": "a@b.c",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 2
+    },
+    {
+      "firstname": "aa",
+      "lastname": "aa",
+      "telnum": 0,
+      "email": "a@a.cc",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 3
+    },
+    {
+      "firstname": "aa",
+      "lastname": "aa",
+      "telnum": 0,
+      "email": "a@c.c",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 4
+    },
+    {
+      "firstname": "ss",
+      "lastname": "ss",
+      "telnum": 0,
+      "email": "s@s.c",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 5
+    },
+    {
+      "firstname": "ss",
+      "lastname": "ss",
+      "telnum": 0,
+      "email": "s@d.co",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 6
+    },
+    {
+      "firstname": "ss",
+      "lastname": "ss",
+      "telnum": 0,
+      "email": "s@w.c",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 7
+    },
+    {
+      "firstname": "dd",
+      "lastname": "ll",
+      "telnum": 0,
+      "email": "l@l.c",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 8
+    },
+    {
+      "firstname": "aa",
+      "lastname": "aa",
+      "telnum": 0,
+      "email": "a@a.s",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 9
+    },
+    {
+      "firstname": "aa",
+      "lastname": "aa",
+      "telnum": 0,
+      "email": "a@a.c",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 10
+    },
+    {
+      "firstname": "ss",
+      "lastname": "ss",
+      "telnum": 0,
+      "email": "s@s.d",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 11
+    },
+    {
+      "firstname": "aa",
+      "lastname": "aa",
+      "telnum": 0,
+      "email": "a@a.s",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 12
+    },
+    {
+      "firstname": "aa",
+      "lastname": "aa",
+      "telnum": 0,
+      "email": "a@a.c",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 13
+    },
+    {
+      "firstname": "ss",
+      "lastname": "ss",
+      "telnum": 0,
+      "email": "s@a.com",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 14
+    },
+    {
+      "firstname": "aa",
+      "lastname": "aa",
+      "telnum": 0,
+      "email": "a@w.s",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 15
+    },
+    {
+      "firstname": "aa",
+      "lastname": "aa",
+      "telnum": 0,
+      "email": "s@a.com",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 16
+    },
+    {
+      "firstname": "aa",
+      "lastname": "aa",
+      "telnum": 0,
+      "email": "s@a.com",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 17
+    },
+    {
+      "firstname": "aa",
+      "lastname": "aa",
+      "telnum": "0",
+      "email": "s@a.com",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 18
+    },
+    {
+      "firstname": "aa",
+      "lastname": "aa",
+      "telnum": 0,
+      "email": "s@a.com",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 19
+    },
+    {
+      "firstname": "aa",
+      "lastname": "aa",
+      "telnum": 0,
+      "email": "s@a.com",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 20
+    },
+    {
+      "firstname": "aa",
+      "lastname": "aa",
+      "telnum": 0,
+      "email": "s@a.com",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 21
+    },
+    {
+      "firstname": "aa",
+      "lastname": "aa",
+      "telnum": 0,
+      "email": "s@a.com",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 22
+    },
+    {
+      "firstname": "aa",
+      "lastname": "aa",
+      "telnum": 0,
+      "email": "s@a.com",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 23
+    },
+    {
+      "firstname": "aa",
+      "lastname": "aa",
+      "telnum": 0,
+      "email": "s@a.com",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 24
+    },
+    {
+      "firstname": "aa",
+      "lastname": "aa",
+      "telnum": "0",
+      "email": "s@a.com",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 25
+    },
+    {
+      "firstname": "ss",
+      "lastname": "ss",
+      "telnum": 0,
+      "email": "s@a.com",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 26
+    },
+    {
+      "firstname": "aa",
+      "lastname": "bb",
+      "telnum": 0,
+      "email": "s@a.com",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 27
+    },
+    {
+      "firstname": "aa",
+      "lastname": "aa",
+      "telnum": 0,
+      "email": "s@a.com",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 28
+    },
+    {
+      "firstname": "bb",
+      "lastname": "bb",
+      "telnum": "0",
+      "email": "s@a.com",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 29
+    },
+    {
+      "firstname": "bb",
+      "lastname": "dd",
+      "telnum": 0,
+      "email": "s@a.com",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 30
+    },
+    {
+      "firstname": "cc",
+      "lastname": "cc",
+      "telnum": 0,
+      "email": "s@a.com",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 31
+    },
+    {
+      "firstname": "dd",
+      "lastname": "dd",
+      "telnum": 0,
+      "email": "s@a.com",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 32
+    },
+    {
+      "firstname": "ss",
+      "lastname": "ss",
+      "telnum": 0,
+      "email": "s@a.com",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 33
+    },
+    {
+      "firstname": "ss",
+      "lastname": "ss",
+      "telnum": 0,
+      "email": "s@a.com",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 34
+    },
+    {
+      "firstname": "ss",
+      "lastname": "vv",
+      "telnum": 0,
+      "email": "s@a.com",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 35
+    },
+    {
+      "firstname": "dc",
+      "lastname": "dc",
+      "telnum": 0,
+      "email": "s@a.com",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 36
+    },
+    {
+      "firstname": "fd",
+      "lastname": "fd",
+      "telnum": 0,
+      "email": "s@a.com",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 37
+    },
+    {
+      "firstname": "vv",
+      "lastname": "vv",
+      "telnum": 0,
+      "email": "s@a.com",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 38
+    },
+    {
+      "firstname": "ss",
+      "lastname": "ss",
+      "telnum": 0,
+      "email": "s@a.com",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 39
+    },
+    {
+      "firstname": "aaaa",
+      "lastname": "aa",
+      "telnum": 0,
+      "email": "s@a.com",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 40
+    },
+    {
+      "firstname": "aa",
+      "lastname": "aa",
+      "telnum": 0,
+      "email": "s@a.com",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 41
+    },
+    {
+      "firstname": "aa",
+      "lastname": "aa",
+      "telnum": 0,
+      "email": "s@a.com",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 42
+    },
+    {
+      "firstname": "sz",
+      "lastname": "zz",
+      "telnum": 0,
+      "email": "s@a.com",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 43
+    },
+    {
+      "firstname": "aa",
+      "lastname": "aa",
+      "telnum": 0,
+      "email": "s@a.com",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 44
+    },
+    {
+      "firstname": "ss",
+      "lastname": "ss",
+      "telnum": 0,
+      "email": "s@a.com",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 45
+    },
+    {
+      "firstname": "aa",
+      "lastname": "aa",
+      "telnum": "0",
+      "email": "s@a.com",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 46
+    },
+    {
+      "firstname": "aa",
+      "lastname": "aa",
+      "telnum": 0,
+      "email": "s@a.com",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 47
+    },
+    {
+      "firstname": "ss",
+      "lastname": "ss",
+      "telnum": 0,
+      "email": "s@a.com",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 48
+    },
+    {
+      "firstname": "ss",
+      "lastname": "ss",
+      "telnum": 0,
+      "email": "s@a.com",
+      "agree": false,
+      "contacttype": "None",
+      "message": "",
+      "id": 49
+    }
+  ]
+}
